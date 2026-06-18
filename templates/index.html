@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Heart Disease Analysis{% endblock %}
+
+{% block content %}
+
+<section class="welcome-section py-5">
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <!-- Left Side Content -->
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h2 class="welcome-title mb-4">
+                    Welcome
+                </h2>
+
+                <p class="welcome-text">
+                    Heart disease (heart disease) is a group of diseases related
+                    to cardiovascular diseases, manifested by a violation of the
+                    normal functioning of the heart. May be caused by damage to
+                    the epicardium, pericardium, myocardium, endocardium, valvular
+                    apparatus of the heart, heart vessels.
+                </p>
+
+                <p class="welcome-text">
+                    According to the National Heart, Lung and Blood Institute in
+                    Framingham (USA), the most important factors in the development
+                    of cardiovascular disease in humans are obesity, sedentary
+                    lifestyle and smoking.
+                </p>
+
+            </div>
+
+            <!-- Right Side Image -->
+            <div class="col-lg-6 text-center">
+                <img src="{{ url_for('static', filename='images/01.jpg') }}"
+                     alt="Heart Disease"
+                     class="img-fluid rounded shadow-lg welcome-image">
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<div class="container my-5">
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+
+            <div class="card feature-card card-1 text-center p-4">
+
+                <div class="card-body">
+
+                    <i class="fas fa-heartbeat"></i>
+
+                    <h3 class="mt-3">Risk Factors</h3>
+
+                    <p>
+                        Analyze smoking, obesity,
+                        diabetes, and lifestyle impacts.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="card feature-card card-2 text-center p-4">
+
+                <div class="card-body">
+
+                    <i class="fas fa-chart-line"></i>
+
+                    <h3 class="mt-3">Interactive Analysis</h3>
+
+                    <p>
+                        Explore dashboards for
+                        meaningful healthcare insights.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="card feature-card card-3 text-center p-4">
+
+                <div class="card-body">
+
+                    <i class="fas fa-user-md"></i>
+
+                    <h3 class="mt-3">Better Decisions</h3>
+
+                    <p>
+                        Support evidence-based healthcare
+                        planning and interventions.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
